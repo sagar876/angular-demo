@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <div class="container">
+    <h1>Angular Router</h1>
+    <nav>
+      <a routerLink="/" routerLinkActive="active">Home</a>
+      <a routerLink="/song-list" routerLinkActive="active">Songs List</a>
+      <a routerLink="/users" routerLinkActive="active">User List</a>
+      <a routerLink="/create-user" routerLinkActive="active">Create a User</a>
+      <a routerLink="/events" routerLinkActive="active">Event List</a>
+    </nav>
+    <router-outlet></router-outlet>
+    
+    
+      <div class="trip-list" *ngIf="isListVisible">
+        <!-- <table style="width:100%">
+          <tr>
+            <th>Name</th>
+            <th>Price</th> 
+            <th>duration</th>
+            <th>description</th>
+          </tr>
+
+          <tr *ngFor="let trip of data.contacts">
+            <td (click)="getId($event)">{{ trip.name }}</td>
+            <td>{{ trip.email }}</td> 
+            <td>{{ trip.company }}</td>
+            <td>{{ trip.role }}</td>
+            <td>{{ trip.twitter }}</td>
+          </tr>
+        </table> -->
+      </div>
+      <!-- <button (click)="postData()">Display List </button> -->
+  </div>
+</div>
+

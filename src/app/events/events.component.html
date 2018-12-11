@@ -1,0 +1,31 @@
+<h1>Event List</h1>
+<div >
+<table class="event-list" style="width:100%">
+   <tr>
+     <th>Name</th> 
+     <th>Date</th>
+     <th>Time</th>
+     <th>KDJ</th>
+     <th>Image</th>
+   </tr>
+
+   <tr id={{event.id}} (click)='getPendingSongs(event.id)'   *ngFor="let event of events">
+     <td>{{event.name}}</td>
+     <td>{{event.eventDate}}</td> 
+     <td><span>{{event.startTime }} </span> <span>{{event.endTime}}</span></td>
+     <td>{{event.dj }}</td>
+     <td><img src="{{ event.eventImage }}"/></td>
+   </tr>
+ </table>
+</div>
+<!-- <div *ngIf="!isEventAvailaible">
+  POST data
+</div> -->
+<!-- <button (click)="append('section','text')">Append</button>
+
+<div *ngFor="let child of collOfChildren">
+  <p><span>{{child.name}}</span><span>{{child.age}}</span></p>
+</div> -->
+<!-- <div>
+  <span>{{collOfChildren.name}}</span><span>{{collOfChildren.age}}</span>
+</div> -->
